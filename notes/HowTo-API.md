@@ -39,6 +39,8 @@
 
 `http://bootcamp.brogard.io:5051/ads/summary/{store}/store`
 
+>example:
+
 [http://bootcamp.brogard.io:5051/ads/summary/KMART/store](http://bootcamp.brogard.io:5051/ads/summary/KMART/store)
 
 ----
@@ -47,4 +49,6 @@
 
 `http://bootcamp.brogard.io:5051/stores`
 
+>example:
+>
 [http://bootcamp.brogard.io:5051/years](http://bootcamp.brogard.io:5051/stores)
