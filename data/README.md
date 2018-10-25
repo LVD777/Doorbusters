@@ -3,6 +3,11 @@
 Source CSV files along with clean/sanitized data to be used as baseline starting points.
 
 ```
+├── geo
+│   └── bfa.stores.geo-loc.2018-10-25-05.32.51.csv
+├── README.md
+├── sample-sets
+│   └── query_result_holly_sample.csv
 ├── sanitized
 │   ├── bfa.csv
 │   ├── bfa.store.category.csv
