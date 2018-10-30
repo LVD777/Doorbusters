@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doorbusters - Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/resources/lib/fontawesome/5.3.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bfa.dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" data-href="#"><span class="bbb--title-label">Doorbusters</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/Statistical-Analysis/">Statistical Analysis</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Metrics/average-price/">Average Price by Category</a></li>
+                            <li><a href="/Metrics/product-count/">Product Count by Category</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Stores-Locations/">Store's Locations</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul> 
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar-fluid">
+                <ul class="nav nav-sidebar">
+                    <li class="bbb--samples">
+                        <a data-href="#"><span class="bbb--label"><i class="fas fa-table fa-lg"></i> Years</span></a>
+                    </li>
+                    <li class="bbb--samples bbb--width">
+                        <select class="form-control" id="bbb--select-year"></select>
+                    </li>
+                    <br>
+                    <li class="bbb--samples">
+                        <a data-href="#"><span class="bbb--label"><i class="fas fa-table fa-lg"></i> Select Category</span></a>
+                    </li>
+                    <li class="bbb--samples bbb--width">
+                        <select class="form-control" id="bbb--select-category"></select>
+                    </li>                    
+                </ul>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main-fluid" id="bbb--middle">
+                <h2 class="sub-header">Dashboard</h2>
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6">
+                        <div id="bbb--pie-chart"></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                        <div id="bbb--gauge-chart"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div id="bbb--bubble-chart"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/resources/lib/jquery/3.3.1/jquery-3.3.1.slim.min.js"></script>
+    <script src="/resources/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/resources/lib/d3/4.13.0/d3.js"></script>
+    <script src="/resources/lib/plotly/plotly-latest.min.js"></script>
+    <script src="/resources/lib/spin.js/2.0.1/spin.min.js"></script>
+    <script src="/assets/js/bfa.dashboard.js"></script>
+
+</body>
+
+</html>
