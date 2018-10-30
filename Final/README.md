@@ -10,15 +10,15 @@
 	> ### Python Flask API, MySQL
 
 2. Your project should fall into one of the below four tracks: 
- - A custom "creative" D3.js project (i.e. non-standard graph or chart)
+	 - A custom "creative" D3.js project (i.e. non-standard graph or chart)
 
- - A combination of Web Scraping and Leaflet or Plotly
+	 - A combination of Web Scraping and Leaflet or Plotly
  		> Leaflet, Plotly
 
- - A dashboard page with multiple charts all updating from the same data
+	 - A dashboard page with multiple charts all updating from the same data
  		> main entry page: **pie chart**, **bubble chart**
 
- - A "thick" server that performs multiple manipulations on data in a database prior to visualization
+	 - A "thick" server that performs multiple manipulations on data in a database prior to visualization
  		> SQL views 
 
 3. Your project should include at least one JS library that we did not cover.
