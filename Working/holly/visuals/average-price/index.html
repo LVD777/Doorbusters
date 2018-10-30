@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Average Price by Category</title>
+</head>
+
+<div id="myExcelDiv" style="width: 1500px; height: 900px"></div>
+<!-- * This code uses the Microsoft Office Excel Javascript object model to programmatically insert the
+	 * Excel Web App into a div with id=myExcelDiv. The full API is documented at
+	 * https://msdn.microsoft.com/en-US/library/hh315812.aspx. There you can find out how to programmatically get
+	 * values from your Excel file and how to use the rest of the object model. -->
+<script type="text/javascript" src="https://onedrive.live.com/embed?resid=14BB5FBF50F451C%212758&authkey=%21AIEZ0eju3aOEw4Y&em=3&wdItem=%22Chart%201%22&wdDivId=%22myExcelDiv%22"></script>
+<script type="text/javascript"> 
+
+var ewa = null;
+
+// Add event handler for onload event.
+if (window.attachEvent) {
+    window.attachEvent("onload", ewaOnPageLoad);
+}
+else {
+    window.addEventListener("DOMContentLoaded", ewaOnPageLoad, false);
+}
+
+// Add event handler for applicationReady event.
+function ewaOnPageLoad() {
+    Ewa.EwaControl.add_applicationReady(onApplicationReady);
+}
+
+
+function onApplicationReady(result) {
+    ewa = Ewa.EwaControl.getInstances().getItem(0); 
+	var iframe = document.getElementById('myExcelDiv').children[0];
+	var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+	innerDoc.getElementById("ewaSyndmyExcelDiv_m_ewaEmbedViewerBar").style.display = 'none';
+}
+
+</script>
+
+
+</html>

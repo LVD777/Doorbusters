@@ -1,3 +1,5 @@
+# Doorbusters
+
 # Proposal: Black Friday Advertised Deals
 
 ## Team Name
@@ -42,5 +44,4 @@ the category![bfa.05.png](Proposal/Resources/bfa.05.png)
 ## GitHub Repository
 
 - [https://github.com/lvondracek7/Doorbusters](https://github.com/lvondracek7/Doorbusters)
-
 
