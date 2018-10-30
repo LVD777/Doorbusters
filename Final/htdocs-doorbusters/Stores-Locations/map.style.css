@@ -1,0 +1,17 @@
+#map, #map--box, body, html, main-fluid {
+    height: 100%;
+}
+
+#map--box {
+    margin-top: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bbb--width {
+    width: 85%;
+    padding-left: 20px;
+}

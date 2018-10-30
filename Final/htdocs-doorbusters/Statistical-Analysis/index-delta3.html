@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BFA-plots</title>
+	<meta charset="utf-8" /> 
+	<meta name="robots" content="noindex, nofollow" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bfa.plots.style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+	<div class="container">
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" data-href="#"><span class="nav--title">Doorbusters - More Data Points</span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<main class="container">
+    <section>
+        <div class="row">
+            <span class="main--title mx-auto">Black Friday Advertisements -- Statistical Analysis</span>
+        </div>
+        <div class="row">
+            <select class="form-control chart-select-left" id="bfa--select-y"></select>
+        </div>
+        <div class="row">
+            <div id="bfa--plot" class="chart mx-auto"></div>
+        </div>
+        <div class="row">
+            <div class="chart-radio-bottom mx-auto">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="count" checked>
+                            <label class="form-check-label">Count</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="mean">
+                            <label class="form-check-label">Mean</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="std">
+                            <label class="form-check-label">Standard Deviation</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="min">
+                            <label class="form-check-label">Minimum</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="max">
+                            <label class="form-check-label">Maximum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">                
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="25per">
+                            <label class="form-check-label">25th Percentile</label>
+                        </div>                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="50per">
+                            <label class="form-check-label">50th Percentile</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="75per">
+                            <label class="form-check-label">75th Percentile</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/resources/lib/d3/4.13.0/d3.min.js"></script>
+<script src="/resources/lib/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script src="/resources/lib/spin.js/2.0.1/spin.min.js"></script>
+<script src="resources/js/bfa.plots.js"></script>    
+
+</body>
+</html>

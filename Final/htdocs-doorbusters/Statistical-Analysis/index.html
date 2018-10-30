@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doorbusters - Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/resources/lib/fontawesome/5.3.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bfa.dashboard.css">
+    <link rel="stylesheet" href="resources/css/bfa.plots.style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" data-href="#"><span class="bbb--title-label">Doorbusters</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Dashboard</a></li>
+                    <li class="active"><a href="/Statistical-Analysis/">Statistical Analysis</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Metrics/average-price/">Average Price by Category</a></li>
+                            <li><a href="/Metrics/product-count/">Product Count by Category</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Stores-Locations/">Store's Locations</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul> 
+    
+            </div>
+        </div>
+    </nav>
+
+<main class="container">
+    <section>
+        <div class="row">
+            <div class="col-centered">
+                <div class="main--title">Black Friday Advertisements -- Statistical Analysis</div>
+            </div>
+        </div>
+        <div class="row">
+            <select class="form-control chart-select-left" id="bfa--select-y"></select>
+        </div>
+        <div class="row">
+            <div id="bfa--plot" class="chart col-centered"></div>
+        </div>
+        <div class="row">
+            <div class="chart-radio-bottom col-centered">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="count" checked>
+                            <label class="form-check-label">Count</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="mean">
+                            <label class="form-check-label">Mean</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="std">
+                            <label class="form-check-label">Standard Deviation</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="min">
+                            <label class="form-check-label">Minimum</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="max">
+                            <label class="form-check-label">Maximum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">                
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="25per">
+                            <label class="form-check-label">25th Percentile</label>
+                        </div>                        
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="50per">
+                            <label class="form-check-label">50th Percentile</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input class="form-check-input bfa--radio" type="radio" name="bfa--radio-button" value="75per">
+                            <label class="form-check-label">75th Percentile</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/resources/lib/jquery/3.3.1/jquery-3.3.1.slim.min.js"></script>
+<script src="/resources/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/resources/lib/d3/4.13.0/d3.min.js"></script>
+<script src="/resources/lib/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script src="/resources/lib/spin.js/2.0.1/spin.min.js"></script>
+<script src="resources/js/bfa.plots.js"></script>    
+
+</body>
+</html>

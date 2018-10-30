@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doorbusters - Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/resources/lib/fontawesome/5.3.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/bfa.dashboard.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <link rel="stylesheet" href="map.style.css">
+    
+    
+  
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" data-href="#"><span class="bbb--title-label">Doorbusters</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/Statistical-Analysis/">Statistical Analysis</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metrics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Metrics/average-price/">Average Price by Category</a></li>
+                            <li><a href="/Metrics/product-count/">Product Count by Category</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="/Stores-Locations/">Store's Locations</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul> 
+    
+            </div>
+        </div>
+    </nav>
+
+    <div id="map--box">   
+        <div id="map"></div>
+    </div> 
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar-fluid">
+                <ul class="nav nav-sidebar">
+                    <li class="bbb--samples">
+                        <a data-href="#"><span class="bbb--label"><i class="fas fa-table fa-lg"></i> Years</span></a>
+                    </li>
+                    <li class="bbb--samples bbb--width">
+                        <select class="form-control" id="bbb--select-year"></select>
+                    </li>
+                    <br>
+                    <li class="bbb--samples">
+                        <a data-href="#"><span class="bbb--label"><i class="fas fa-table fa-lg"></i> Stores</span></a>
+                    </li>
+                    <li class="bbb--samples bbb--width">
+                        <select class="form-control" id="bbb--select-store"></select>
+                    </li>                    
+                              
+                    
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main-fluid">
+   
+            </div>
+        </div>
+    </div>
+    <script src="/resources/lib/jquery/3.3.1/jquery-3.3.1.slim.min.js"></script>
+    <script src="/resources/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://underscorejs.org/underscore.js"></script>
+    
+    <script src="/resources/lib/d3/4.13.0/d3.js"></script>
+    <script src="/resources/lib/leaflet/Leaflet.heat/0.2.0/leaflet-heat.js"></script>
+    <script src="map.js"></script>
+
+</body>
+
+</html>
